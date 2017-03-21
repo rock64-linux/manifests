@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <manifest>
+  <default sync-j="2" />
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/rockchip-linux" name="rockchip"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="git://github.com/koenkooi"  name="KODI"/>
+
+  <project remote="yocto" revision="morty" name="poky" path="sources/poky"/>
+  <project remote="rockchip" revision="morty" name="meta-rockchip" path="sources/meta-rockchip"/>
+  <project remote="rockchip" revision="morty" name="meta-rockchip-extra" path="sources/meta-rockchip-extra"/>
+    
+  <project remote="rockchip" revision="master" name="rkbin" path="rkbin"/>
+  <project remote="rockchip" revision="morty" name="build" path="sources/base">
+        <copyfile dest="README" src="README"/>
+        <copyfile dest="setup-environment" src="setup-environment"/>
+        <copyfile dest="flash_tool.sh" src="flash_tool.sh"/>
+  </project>
+
+    
+  <project remote="oe" revision="morty" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="QT5" revision="morty" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="OSSystems" revision="morty" name="meta-browser" path="sources/meta-browser" />
+  <project remote="KODI" revision="morty" name="meta-kodi" path="sources/meta-kodi" />
+
+  </manifest>
