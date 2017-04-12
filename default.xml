@@ -14,7 +14,7 @@
   <project remote="rockchip" revision="morty" name="meta-rockchip-extra" path="sources/meta-rockchip-extra"/>
     
   <project remote="rockchip" revision="master" name="rkbin" path="rkbin"/>
-  <project remote="rockchip" revision="morty" name="build" path="sources/base">
+  <project remote="rockchip" revision="yocto" name="build" path="sources/base">
         <copyfile dest="README" src="README"/>
         <copyfile dest="setup-environment" src="setup-environment"/>
         <copyfile dest="flash_tool.sh" src="flash_tool.sh"/>
