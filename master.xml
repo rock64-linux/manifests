@@ -10,7 +10,7 @@
   <remote fetch="git://github.com/koenkooi"  name="KODI"/>
     
   <project remote="yocto" revision="master" name="poky" path="sources/poky"/>
-  <project remote="rockchip" revision="master" name="meta-rockchip" path="sources/meta-rockchip"/>
+  <project remote="yocto" revision="master" name="meta-rockchip" path="sources/meta-rockchip"/>
   <project remote="rockchip" revision="morty" name="meta-rockchip-extra" path="sources/meta-rockchip-extra"/>
  
   <project remote="rockchip" revision="yocto" name="build" path="sources/base">
