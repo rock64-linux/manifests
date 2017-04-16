@@ -20,6 +20,5 @@
 
   <project remote="oe" revision="master" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="QT5" revision="master" name="meta-qt5" path="sources/meta-qt5" />
-  <project remote="QT5" revision="master" name="meta-qt5" path="sources/meta-qt5-extra" />
     
   </manifest>
