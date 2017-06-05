@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="rockchip-linux"
+  <remote  name="rock64-linux"
            fetch="."
-           review="https://github.com/rockchip-linux/" />
+           review="https://github.com/rock64-linux/" />
   <default revision="master"
-           remote="rockchip-linux"
+           remote="rock64-linux"
            sync-j="4" />
 
-  <project path="kernel" name="kernel" revision="release-4.4"/>
+  <project path="kernel" name="kernel" revision="release-4.4-3328"/>
   <project path="u-boot" name="u-boot" revision="release"/>
   <project path="rootfs" name="rk-rootfs-build" />
   <project path="rkbin" name="rkbin" />
