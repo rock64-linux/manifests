@@ -28,3 +28,4 @@ Update image:
 	sdcard: build/flash_tool.sh -c rock64  -d /dev/sdb -p system  -i  out/system.img 
 	sync
 	
+Note: For debugging, serial port baud rate set to 1500000
