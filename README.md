@@ -29,3 +29,8 @@ Update image:
 	sync
 	
 Note: For debugging, serial port baud rate set to 1500000
+
+First time linaro Login 
+Username: linaro
+password: linaro
+
