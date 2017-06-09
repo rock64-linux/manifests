@@ -15,14 +15,14 @@ Building kernel:
 
 Building u-boot:
 	cd u-boot
-	CROSS_COMPILE=aarch64-linux-gnu- make rock64_defconfig all
+	CROSS_COMPILE=aarch64-linux-gnu- make rock64-rk3328_defconfig all
 
 Buiding kernel and u-boot image:
-	build/mk-kernel.sh rock64
-	build/mk-uboot.sh rock64
+	build/mk-kernel.sh rk3328-rock64
+	build/mk-uboot.sh rk3328-rock64
 	
 Building one system image:
-	build/mk-image.sh -c rock64 -t system -s 4000 -r linaro-rootfs.img
+	build/mk-image.sh -c rk3328 -t system -s 4000 -r linaro-rootfs.img
 	
 Update image: 
 	sdcard: build/flash_tool.sh -c rock64  -d /dev/sdb -p system  -i  out/system.img 
