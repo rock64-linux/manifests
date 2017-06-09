@@ -25,7 +25,7 @@ Building one system image:
 	build/mk-image.sh -c rk3328 -t system -s 4000 -r linaro-rootfs.img
 	
 Update image: 
-	sdcard: build/flash_tool.sh -c rock64  -d /dev/sdb -p system  -i  out/system.img 
+	sdcard: build/flash_tool.sh -c rk3328 -d /dev/sdb -p system  -i  out/system.img 
 	sync
 	
 Note: For debugging, serial port baud rate set to 1500000
